@@ -172,16 +172,17 @@
 	background: #50A7FF;
 	position: relative;
 	flex: 1;
-	max-width: 460px;
-	height: 300px;
+  border-radius: 20px;
+	max-width: 480px;
+	height: 350px;
 	margin: 20px;
 	overflow: hidden;
 }
 
 .image img{
 	opacity: 0.8;
-  width: 460px;
-	height: 300px;
+  width: 480px;
+	height: 350px;
 	position: relative;
 	vertical-align: top;
 	transition: 0.6s;
@@ -292,3 +293,216 @@
 	}
 }
 /*- News -*/
+
+
+
+
+/*- Domains-*/
+
+.domains{
+  background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+
+}
+  .domain-head{
+    position: relative;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+  }
+  s
+.con{
+	margin: 20px;
+}
+
+.row1{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.domain{
+	background: #50A7FF;
+	position: relative;
+	flex: 1;
+	max-width: 460px;
+	height: 300px;
+	margin: 20px;
+	overflow: hidden;
+  border-radius: 15px;
+}
+
+.domain img{
+	opacity: 0.8;
+  width: 460px;
+	height: 300px;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+	transition-property: opacity;
+}
+
+.domain:hover img{
+	opacity: 1;
+}
+
+.domain .data{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.domain .data h2{
+	text-align: center;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 70px;
+	transition: 0.4s;
+	transition-property: transform;
+}
+
+.domain .data h2 span{
+	font-weight: 900;
+}
+
+.domain:hover .data h2{
+	transform: translateY(-30px);
+}
+
+.domain .data p{
+	margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
+}
+
+.domain:hover .data p{
+	opacity: 1;
+	transform: translateY(-40px);
+}
+
+.d1{
+	position: absolute;
+	background: rgba(255, 255, 255, 0.8);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 15px;
+	bottom: -60px;
+	transition: 0.6s;
+	transition-property: bottom;
+}
+
+.domain:hover .d1{
+	bottom: 0;
+}
+
+.d1 .donate{
+	color: #000;
+	text-decoration: none;
+  text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+  align-content: center;
+	text-transform: uppercase;
+}
+
+
+/* Responsive CSS */
+
+@media (max-width: 1080px){
+	.domain{
+		flex: 100%;
+		max-width: 480px;
+	}
+}
+
+@media (max-width: 400px){
+	.domain .data p{
+		font-size: 16px;
+	}
+
+	.d1 .donate{
+		font-size: 18px;
+	}
+}
+
+/*- Footer -*/
+
+.footer{
+  padding: 40px 0;
+  background-color: rgba(122, 122, 122, 0.151);
+}
+
+.footer .social{
+  text-align: center;
+  padding-bottom: 25px;
+  color: #121213;
+}
+
+.footer .social a i{
+  size: 18px;
+}
+
+.footer .social a{
+  font-size: 24px;
+  color: inherit;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin:  0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover{
+  opacity: 0.9; 
+}
+
+.footer ul{
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a{
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+  color: #000;
+}
+
+.footer ul li a:hover{
+  opacity: 1;
+}
+
+.footer .copyright{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(32, 32, 32);
+}
+/*- Footer -*/
